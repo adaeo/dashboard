@@ -8,12 +8,14 @@ export default function Home(props) {
 
   async function getData() {
     try {
+      setText("Loading...");
       let res = await fetch(url);
       let data = await res.json();
       console.log(data);
       let dataString = await JSON.stringify(data);
       setText(dataString);
     } catch (err) {
+      setText("Failed to fetch...");
       console.log(err);
     }
   }
