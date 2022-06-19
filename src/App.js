@@ -7,6 +7,7 @@ import "./App.css";
 
 // component import 
 import Home from "./routes/Home";
+import DevTest from "./routes/DevTest";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <div className="App">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/devtest" element={<DevTest />} />
           </Routes>
       </div>
     </BrowserRouter>
