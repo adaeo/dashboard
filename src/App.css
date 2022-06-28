@@ -1,38 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* START General */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  height: 100%;
+}
+
+body {
+  background: #e0e1dd;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+#root,
 .App {
-  text-align: center;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* END General */
+
+/* START Navigation */
+.nav-bar {
+  background: #0d1b2a;
+  color: #e0e1dd;
+  padding: 0.5em 2em;
+  flex-shrink: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav a {
+  color: #e0e1dd;
+  text-decoration: none;
+  transition: 0.2s ease all;
 }
+
+.nav a:hover {
+  background: #415a77;
+  color: #e0e1dd;
+}
+
+.nav a:focus {
+  color: inherit;
+}
+
+/* END Navigation */
+
+/* START Generic Container */
+.container-generic {
+  padding-top: 2vh;
+  padding-bottom: 0vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+/* END Generic Container */

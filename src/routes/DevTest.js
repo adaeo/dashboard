@@ -48,7 +48,7 @@ export default function DevTest(props) {
 
   return (
     <main>
-      <Container>
+      <div className="container-generic pb-2">
         <h1>{text}</h1>
         <Button
           onClick={() => {
@@ -57,10 +57,10 @@ export default function DevTest(props) {
         >
           Press Me
         </Button>
-      </Container>
-      <Container>
+      </div>
+      <div className="container-generic">
         <div>
-          <Input type="file" name="file" onChange={changeHandler} />
+          <Input className="mb-2" type="file" name="file" onChange={changeHandler} />
           {isSelected ? (
             <div>
               <p>Filename: {selectedFile.name}</p>
@@ -78,7 +78,7 @@ export default function DevTest(props) {
             <Button onClick={handleSubmission}>Submit</Button>
           </div>
         </div>
-      </Container>
+      </div>
     </main>
   );
 }

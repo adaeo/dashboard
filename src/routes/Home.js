@@ -1,9 +1,7 @@
-import { Container } from "reactstrap";
-
 export default function Home(props) {
   return (
-    <Container>
+    <div class="container-generic">
       <h1>Home</h1>
-    </Container>
+    </div>
   );
 }

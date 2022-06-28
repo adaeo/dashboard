@@ -7,22 +7,20 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 // component import
+import Navigation from "./components/Navigation";
+
+// route import
 import Home from "./routes/Home";
 import DevTest from "./routes/DevTest";
 
 function App() {
   return (
     <div>
-      <Container>
-        <Link to="/">Home</Link>
-        <Link to="/devtest">DevTest</Link>
-      </Container>
-      <Container>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/devtest" element={<DevTest />} />
-        </Routes>
-      </Container>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/devtest" element={<DevTest />} />
+      </Routes>
     </div>
   );
 }
