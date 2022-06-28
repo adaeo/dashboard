@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { Link, Routes, Route, HashRouter } from "react-router-dom";
 
 // styles import
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -11,16 +11,16 @@ import DevTest from "./routes/DevTest";
 
 function App() {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
-      <div className="App">
-        <Routes>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/devtest">
-            <DevTest />
-          </Route>
-        </Routes>
+    <HashRouter basename="/">
+    <div>
+      <ul>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+      </ul>
+
+      <hr />
+
+      <Route exact path="/" component={Home} />
       </div>
     </HashRouter>
   );
