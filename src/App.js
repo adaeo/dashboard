@@ -1,24 +1,28 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
 // styles import
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-// component import 
+// component import
 import Home from "./routes/Home";
 import DevTest from "./routes/DevTest";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <div className="App">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/devtest" element={<DevTest />} />
-          </Routes>
+        <Routes>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/devtest">
+            <DevTest />
+          </Route>
+        </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
