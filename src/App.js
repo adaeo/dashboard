@@ -13,8 +13,6 @@ function App() {
   return (
     <div>
       <Routes>
-        <Link to="/">Home</Link>
-        <Link to="/devtest">DevTest</Link>
         <Route path="/" element={<Home />} />
         <Route path="/devtest" element={<DevTest />} />
       </Routes>
