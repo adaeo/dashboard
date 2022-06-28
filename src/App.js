@@ -11,7 +11,7 @@ import DevTest from "./routes/DevTest";
 
 function App() {
   return (
-    <HashRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Routes>
           <Route exact path="/">
