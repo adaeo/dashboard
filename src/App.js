@@ -11,18 +11,14 @@ import DevTest from "./routes/DevTest";
 
 function App() {
   return (
-    <HashRouter basename="/">
     <div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-      </ul>
-
-      <hr />
-
-      <Route exact path="/" component={Home} />
-      </div>
-    </HashRouter>
+      <Link to="/home">Home</Link>
+      <Link to="/devtest">DevTest</Link>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/devtest" element={<DevTest />} />
+      </Routes>
+    </div>
   );
 }
 
