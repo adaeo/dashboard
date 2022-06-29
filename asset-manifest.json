@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/dashboard/static/css/main.4564fc6b.css",
+    "main.css": "/dashboard/static/css/main.0871b859.css",
     "main.js": "/dashboard/static/js/main.ce2cdb9c.js",
     "static/js/787.545aecf5.chunk.js": "/dashboard/static/js/787.545aecf5.chunk.js",
     "index.html": "/dashboard/index.html",
-    "main.4564fc6b.css.map": "/dashboard/static/css/main.4564fc6b.css.map",
+    "static/media/hamburger.svg": "/dashboard/static/media/hamburger.2b1dd243aa197b603ba8.svg",
+    "main.0871b859.css.map": "/dashboard/static/css/main.0871b859.css.map",
     "main.ce2cdb9c.js.map": "/dashboard/static/js/main.ce2cdb9c.js.map",
     "787.545aecf5.chunk.js.map": "/dashboard/static/js/787.545aecf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4564fc6b.css",
+    "static/css/main.0871b859.css",
     "static/js/main.ce2cdb9c.js"
   ]
 }
