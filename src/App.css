@@ -51,7 +51,16 @@ body {
 }
 
 .nav-bar .nav-link {
-  color:#e0e1dd !important;
+  color: #e0e1dd !important;
+}
+
+.nav-bar .nav-toggle:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-bar .navbar-toggler-icon {
+  background-image: url("assets/hamburger.svg");
 }
 
 /* END Navigation */
