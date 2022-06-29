@@ -1,38 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import { Navbar, Nav, NavItem, NavLink, NavbarBrand } from "reactstrap";
+import { Navbar, Nav, Container } from "react-bootstrap";
 
 export default function Navigation(props) {
   return (
-    <div className="nav-bar">
-      <Navbar dark>
-        <NavbarBrand to="/" tag={Link}>
+    <Navbar collapseOnSelect expand="lg" variant="dark" className="nav-bar">
+      <Container fluid>
+        <Navbar.Brand to="/" as={Link} className="nav-brand">
           adaeo's Dashboard
-        </NavbarBrand>
-        <Nav className="nav">
-          <NavItem>
-            <NavLink to="/" tag={Link}>
+        </Navbar.Brand>
+        <Navbar.Toggle className="nav-toggle" />
+        <Navbar.Collapse className="justify-content-end">
+          <Nav>
+            <Nav.Link eventKey="home-link" to="/" as={Link}>
               Home
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/one" tag={Link}>
-              One
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/two" tag={Link}>
-              Two
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/devtest" tag={Link}>
-              DevTest
-            </NavLink>
-          </NavItem>
-        </Nav>
-      </Navbar>
-    </div>
+            </Nav.Link>
+            <Nav.Link eventKey="devtest-link" to="/devtest" as={Link}>
+              Devtest
+            </Nav.Link>
+            <Nav.Link eventKey="missing-link" to="/missingpage" as={Link}>
+              404 Page
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }

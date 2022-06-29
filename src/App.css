@@ -38,19 +38,20 @@ body {
   flex-shrink: 0;
 }
 
-.nav a {
-  color: #e0e1dd;
-  text-decoration: none;
-  transition: 0.2s ease all;
-}
-
-.nav a:hover {
-  background: #415a77;
+.nav-bar .nav-brand {
   color: #e0e1dd;
 }
 
-.nav a:focus {
-  color: inherit;
+.nav-bar .nav-brand:hover {
+  color: #e0e1dd;
+}
+
+.nav-bar .nav-brand:focus {
+  color: #e0e1dd;
+}
+
+.nav-bar .nav-link {
+  color:#e0e1dd !important;
 }
 
 /* END Navigation */
