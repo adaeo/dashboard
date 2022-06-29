@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Container, Input } from "reactstrap";
+import { Form, Button } from 'react-bootstrap';
 
 export default function DevTest(props) {
   const url = "https://adaeo-server.herokuapp.com/devtest";
@@ -60,7 +60,10 @@ export default function DevTest(props) {
       </div>
       <div className="container-generic">
         <div>
-          <Input className="mb-2" type="file" name="file" onChange={changeHandler} />
+        <Form.Group controlId="formFile" className="mb-2">
+          <Form.Label>File submission</Form.Label>
+          <Form.Control type="file" onChange={changeHandler} />
+        </Form.Group>
           {isSelected ? (
             <div>
               <p>Filename: {selectedFile.name}</p>
