@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/dashboard/static/css/main.0871b859.css",
-    "main.js": "/dashboard/static/js/main.ce2cdb9c.js",
+    "main.css": "/dashboard/static/css/main.cbd88923.css",
+    "main.js": "/dashboard/static/js/main.b9c861bd.js",
     "static/js/787.545aecf5.chunk.js": "/dashboard/static/js/787.545aecf5.chunk.js",
     "index.html": "/dashboard/index.html",
-    "static/media/hamburger.svg": "/dashboard/static/media/hamburger.2b1dd243aa197b603ba8.svg",
-    "main.0871b859.css.map": "/dashboard/static/css/main.0871b859.css.map",
-    "main.ce2cdb9c.js.map": "/dashboard/static/js/main.ce2cdb9c.js.map",
+    "static/media/hamburger.svg": "/dashboard/static/media/hamburger.b70b199d2bbaab94b1a9.svg",
+    "main.cbd88923.css.map": "/dashboard/static/css/main.cbd88923.css.map",
+    "main.b9c861bd.js.map": "/dashboard/static/js/main.b9c861bd.js.map",
     "787.545aecf5.chunk.js.map": "/dashboard/static/js/787.545aecf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0871b859.css",
-    "static/js/main.ce2cdb9c.js"
+    "static/css/main.cbd88923.css",
+    "static/js/main.b9c861bd.js"
   ]
 }
