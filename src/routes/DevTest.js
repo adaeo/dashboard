@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button } from "react-bootstrap";
 
 export default function DevTest(props) {
   const url = "https://adaeo-server.herokuapp.com/devtest";
@@ -46,6 +46,11 @@ export default function DevTest(props) {
       });
   };
 
+  const millisecondsToDate = (milliseconds) => {
+    let date = new Date(milliseconds).toLocaleString();
+    return date;
+  };
+
   return (
     <main>
       <div className="container-generic pb-2">
@@ -60,10 +65,10 @@ export default function DevTest(props) {
       </div>
       <div className="container-generic">
         <div>
-        <Form.Group controlId="formFile" className="mb-2">
-          <Form.Label>File submission</Form.Label>
-          <Form.Control type="file" onChange={changeHandler} />
-        </Form.Group>
+          <Form.Group controlId="formFile" className="mb-2">
+            <Form.Label>File submission</Form.Label>
+            <Form.Control type="file" onChange={changeHandler} />
+          </Form.Group>
           {isSelected ? (
             <div>
               <p>Filename: {selectedFile.name}</p>
@@ -71,7 +76,7 @@ export default function DevTest(props) {
               <p>Size in bytes: {selectedFile.size}</p>
               <p>
                 lastModifiedDate:{" "}
-                {selectedFile.lastModifiedDate.toLocaleDateString()}
+                {millisecondsToDate(selectedFile.lastModified)}
               </p>
             </div>
           ) : (
