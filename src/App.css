@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* START General */
 * {
@@ -34,16 +34,20 @@ body {
 .nav-bar {
   background: #0d1b2a;
   color: #e0e1dd;
-  padding: 0.5em 2em;
+  padding: 0.8em 2em;
   flex-shrink: 0;
 }
 
 .nav-bar .nav-brand {
   color: #e0e1dd;
+  font-weight: 400;
+  text-decoration: underline 0.15rem #0d1b2a !important;
+  transition: text-decoration-color 300ms;
 }
 
 .nav-bar .nav-brand:hover {
   color: #e0e1dd;
+  text-decoration: underline 0.15rem #e0e1dd !important;
 }
 
 .nav-bar .nav-brand:focus {
@@ -52,6 +56,14 @@ body {
 
 .nav-bar .nav-link {
   color: #e0e1dd !important;
+  font-size: 1.05em;
+  font-weight: 300;
+  text-decoration: underline 0.15rem #0d1b2a !important;
+  transition: text-decoration-color 300ms;
+}
+
+.nav-bar .nav-link:hover {
+  text-decoration: underline 0.15rem #e0e1dd !important;
 }
 
 .nav-bar .nav-toggle:focus {

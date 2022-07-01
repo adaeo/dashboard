@@ -20,8 +20,12 @@ export default function Navigation(props) {
               Devtest
             </Nav.Link>
             <Nav.Link eventKey="missing-link" to="/missingpage" as={Link}>
-              404 Page
+              Missing
             </Nav.Link>
+            <Nav.Link eventKey="login-link" to="/login" as={Link}>
+              Login
+            </Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>
